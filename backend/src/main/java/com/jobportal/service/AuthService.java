@@ -32,6 +32,10 @@ public class AuthService {
         }
 
         String roleName = "ROLE_" + request.getRole().toUpperCase();
+        // Only candidates and recruiters may self-register; admins must never be created here
+        if (!roleName.equals(Role.CANDIDATE) && !roleName.equals(Role.RECRUITER)) {
+            throw new BadRequestException("Invalid role: " + request.getRole());
+        }
         Role role = roleRepository.findByName(roleName)
                 .orElseThrow(() -> new BadRequestException("Invalid role: " + request.getRole()));
 
