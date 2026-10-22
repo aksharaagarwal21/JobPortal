@@ -1,0 +1,19 @@
+# ===== Backend (Spring Boot / Maven) =====
+backend/target/
+# Local build/run logs
+backend/*.txt
+*.log
+# Files uploaded at runtime (app.upload.dir)
+uploads/
+
+# ===== Frontend (React / Vite) =====
+# See frontend/.gitignore
+
+# ===== Local tooling =====
+maven-mvnd-*/
+
+# ===== IDE / OS =====
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
