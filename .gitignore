@@ -3,6 +3,9 @@ backend/target/
 # Local build/run logs
 backend/*.txt
 *.log
+# Local secrets (see application-local.properties.example)
+backend/src/main/resources/application-local.properties
+.env
 # Files uploaded at runtime (app.upload.dir)
 uploads/
 

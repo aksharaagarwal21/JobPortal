@@ -1,0 +1,16 @@
+# Local secrets for development.
+#
+# Copy this file to application-local.properties in the same folder and fill
+# in your values. application-local.properties is gitignored, so it never
+# reaches GitHub. On a server, set the same keys as environment variables
+# instead; environment variables take precedence over this file.
+
+# MySQL password for DB_USERNAME (defaults to root). Leave empty if none.
+DB_PASSWORD=
+
+# Base64-encoded HMAC key of at least 256 bits, e.g. `openssl rand -base64 32`
+JWT_SECRET=
+
+# Optional overrides
+# DB_URL=jdbc:mysql://localhost:3306/job_portal?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+# DB_USERNAME=root
